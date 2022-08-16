@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) :
+    def searchInsert(self, nums: List[int], target: int):
         l, r = 0, len(nums) - 1
         while l <= r:
             mid = (l+r)//2
