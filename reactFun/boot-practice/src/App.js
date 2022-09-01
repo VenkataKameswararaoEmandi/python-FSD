@@ -1,13 +1,8 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Dashboard } from "./screens";
 
 function App() {
-  return (
-    <div className="App">
-      <Button variant="primary">click</Button>
-    </div>
-  );
+  return <Dashboard />;
 }
 
 export default App;

@@ -6,7 +6,7 @@ import profile from "../../../assest/images/profile.svg";
 export default function NavBar(props) {
   let navigate = useNavigate();
 
-  const { onSearchChange, title = "React Store", sizeOfCart = 0 } = props;
+  const { onSearchChange, title = "Assessment Store", sizeOfCart = 0 } = props;
 
   return (
     <div className="NavBar-container">
@@ -23,7 +23,7 @@ export default function NavBar(props) {
         onClick={() => navigate("/browsing/mobilescreen")}
         className="icon1"
       >
-        Phone
+        mobile
       </p>
       <p onClick={() => navigate("/browsing/clothscreen")} className="icon1">
         Dresses
