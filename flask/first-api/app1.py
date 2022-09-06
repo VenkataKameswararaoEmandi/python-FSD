@@ -49,39 +49,39 @@ def initiateNewthing():
     return jsonify(reqObj)
 
 
-stores = [{"name": "Raman Store", "items": [
-    {"name": "shirt", "qty": 56}, {"name": "pant", "qty": 34}]}]
+# stores = [{"name": "Raman Store", "items": [
+#     {"name": "shirt", "qty": 56}, {"name": "pant", "qty": 34}]}]
 
 
-@app.route("/add/store")
-def getStores():
-    newStore = request.get_json()
-    stores.append(newStore)
-    return jsonify({"data": stores})
+# @app.route("/add/store")
+# def getStores():
+#     newStore = request.get_json()
+#     stores.append(newStore)
+#     return jsonify({"data": stores})
 
 
-@app.route("/add/item")
-def getAllStores():
-    reqObj = request.get_json()
-    for i in range(len(stores)):
-        if stores[i] == reqObj["storeId"]:
-            stores[i]["items"].append(reqObj)
+# @app.route("/add/item")
+# def getAllStores():
+#     reqObj = request.get_json()
+#     for i in range(len(stores)):
+#         if stores[i] == reqObj["storeId"]:
+#             stores[i]["items"].append(reqObj)
 
 
-@app.route("/store/<int:storeId>/item/<int:itemId>qty", methods=["POST"])
-def changeStore(storeId, itemId):
-    requestObj = request.get_json()
-    for store in stores:
-        if store["id"] == storeId:
-            for item in store["items"]:
-                if item["id"] == itemId:
-                    item["qty"] == requestObj['qty']
-                    print(stores)
-                else:
-                    print("item not found")
-        else:
-            print("store not found")
-    return "task completed"
+# @app.route("/store/<int:storeId>/item/<int:itemId>qty", methods=["POST"])
+# def changeStore(storeId, itemId):
+#     requestObj = request.get_json()
+#     for store in stores:
+#         if store["id"] == storeId:
+#             for item in store["items"]:
+#                 if item["id"] == itemId:
+#                     item["qty"] == requestObj['qty']
+#                     print(stores)
+#                 else:
+#                     print("item not found")
+#         else:
+#             print("store not found")
+#     return "task completed"
 
 
 app.run(debug=True, port=5000)
