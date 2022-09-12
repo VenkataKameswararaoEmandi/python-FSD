@@ -16,7 +16,6 @@ root.render(
   </React.StrictMode>
 );
 
-import App from "./App";
 render(
   <Provider store={store}>
     <BrowserRouter>
