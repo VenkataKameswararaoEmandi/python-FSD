@@ -9,10 +9,10 @@ export default function Search() {
   return (
     <div className="Search-Container">
       <div className="Search-header">
-        <span className="Search-Product">Search Product</span>
+        <span className="Search-Product">Search</span>
         <input
           type="text"
-          placeholder="Search 1M Products,Electronic etc"
+          placeholder="Search"
           className="Search-field"
           onChange={(e) => dispatch(onSearchChanging(e.target.value))}
         />

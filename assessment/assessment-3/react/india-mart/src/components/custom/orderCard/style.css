@@ -9,7 +9,7 @@
 .Order-field1 {
   display: flex;
   flex-direction: row;
-  border: 0.1vh solid gray;
+  border: 0.1vh solid rgb(197, 101, 101);
   width: 60vw;
   margin: auto;
   gap: 2vw;

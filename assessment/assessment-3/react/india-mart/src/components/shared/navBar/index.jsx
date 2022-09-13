@@ -9,7 +9,7 @@ export default function NavBar(props) {
   const count = useSelector((store) => store.counter);
   let navigate = useNavigate();
   const {
-    title = "ALL-IN-ONE",
+    title = "INDIA-MART",
     Screen1 = "Clothes",
     Screen2 = "Electronic",
     Screen3 = "Kids",

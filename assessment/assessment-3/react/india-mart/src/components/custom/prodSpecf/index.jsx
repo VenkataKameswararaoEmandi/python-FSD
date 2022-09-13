@@ -252,13 +252,13 @@ export default function ProdSpecf(props) {
 
       {!token ? (
         <span className="Prod-Discount">
-          10%
+          50%
           <br />
           OFF
         </span>
       ) : (
         <span className="Prod-Discount">
-          15%
+          55%
           <br />
           OFF
         </span>

@@ -1,7 +1,7 @@
 .AllOrderCard-Container {
   display: flex;
   flex-direction: column;
-  border: 0.1vh solid gray;
+  border: 0.1vh solid black;
   width: 40vw;
   margin: auto;
   height: 30vh;
@@ -10,7 +10,7 @@
   gap: 4vh;
 }
 .AllOrderCard-button {
-  border: 0.1vh solid gray;
+  border: wheat;
   border-radius: 1vw;
   width: 15vw;
   height: 10vh;

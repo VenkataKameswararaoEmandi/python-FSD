@@ -45,7 +45,7 @@ export default function CartCard(props) {
           navigate("/login");
         }}
       >
-        Get Extra 5% OFF! Signin First
+        Get Extra 10% OFF! Signin First
       </span>
 
       <span className="Cart-Detail">
@@ -58,13 +58,13 @@ export default function CartCard(props) {
 
       {!token ? (
         <span className="Cart-Discount">
-          10%
+          50%
           <br />
           OFF
         </span>
       ) : (
         <span className="Cart-Discount">
-          15%
+          55%
           <br />
           OFF
         </span>

@@ -72,13 +72,13 @@ export default function Card(props) {
 
       {!token ? (
         <span className="Card-Discount">
-          10%
+          50%
           <br />
           OFF
         </span>
       ) : (
         <span className="Card-Discount">
-          15%
+          50%
           <br />
           OFF
         </span>
