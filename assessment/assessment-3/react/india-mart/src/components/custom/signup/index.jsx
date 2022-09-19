@@ -32,7 +32,7 @@ export default function Signup(props) {
   return (
     <div className="signup-container">
       <form className="form-fields" id="data-form">
-        <span className="field-header">Sign Up</span>
+        <span className="field-header">Sign-Up</span>
         <span className="from-field">
           <label htmlfor="id-name" className="label">
             Name
